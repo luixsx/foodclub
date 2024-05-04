@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 16px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    background-color: #EEA028;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+}
+
+header h1 {
+    font-size: 4rem;
+    border: 3px solid white;
+}
+
+header img {
+    width: 6rem;
+    height: auto;
+    margin: 2rem;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.breadcrumb li {
+    display: inline-flex;
+    padding: 0 5rem 0 5rem;
+}
+
+.breadcrumb li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 1px solid black;
+}
+
+.breadcrumb a:active {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.breadcrumb a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+h2, p, .contacts ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #EEA028;
+    border: 1px solid black;
+    width: 15rem;
+}
+
+p, .contacts ul {
+    background-color: white;
+}
+
+.mission img {
+    width: 1200px;
+    height: 800px;
+}
+
+.mission, .product, .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img {
+    height: 400px;
+    width: 400px;
+}
+
+.container {
+    display: inline-block;
+}
+
+.contacts img {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    background-color: #EEA028;
+    margin: 3rem 0 3rem 0;
+    border: 1px solid black;
+}
+
+footer h3 {
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: white;
+}
+
+#float {
+    display: none;
+}
+
+.float {
+    display: none;
+    
+}
+
+.laptop {
+    position: relative;
+    left: 4rem;
+    padding-right: 4rem;
+}
+
+@media only screen and (max-width:1152px) {
+    .contacts {
+        display: inline;
+        width: auto;
+    }
+
+    .contacts img {
+        width: 100%;
+        height: auto;
+    }
+} 
+
+@media only screen and (max-width:1449px) {
+    .container img {
+        float: right;
+    }
+}
+
+@media only screen and (max-width:772px) {
+    .mission, .product, .container {
+        display: inline;
+        width: auto;
+    }
+
+    .mission img, .container img {
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+
+    .text {
+        display:flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        float: inline-start;
+    }
+
+    h2, p, .contacts ul {
+        display: flex;
+        width: 100%;
+    }
+
+    .breadcrumb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .breadcrumb li {
+        padding: 0.5rem;
+    }
+
+    #product {
+        display: none;
+    }
+
+    #float {
+        display:inline-block;
+    }
+ 
+    .laptop {
+        display: none;
+    }
+
+    .float {
+        display: block;
+        position: relative;
+        bottom: 0.5rem;
+    }
+    }
+
+@media only screen and (max-width:397px) {
+    h2, p, .contacts ul {
+        padding: 1rem;
+    }
+}
